@@ -6,5 +6,7 @@ from django.views import View
 
 class home(View):
     def get(self, request):
-        return HttpResponse("will be updated soon")
+
+        context = {"title":"Programmerly"}
+        return render(request, "codingquestions/mainpage.html", context)
 
