@@ -70,7 +70,6 @@ class all_questions(View):
     def get(self, request):
         questions = questionModel.objects.all()
         tags = Tag.objects.all()
-        print(questions[0])
         
         context = {
             "questions" : questions,
