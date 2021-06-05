@@ -1,0 +1,42 @@
+{% extends 'codingquestions/base.html' %}
+{% load static %}
+{% block content %}
+<div class="page">
+
+	<div id="sidebar">
+		
+			
+				<div class="side">
+					<div id="side_heading">
+						<div class="side__heading">{{type}}</div>
+					</div>
+					<div id="side_content" class="questions">
+						{% for question in questions %}
+						<div class="question"><a href="{% url 'question' question.slug  %}">{{question}}</a></div>
+						{% endfor %}
+
+						
+					</div>
+				</div>
+
+		
+	</div>
+	<div id="content">
+		{% if flag %}
+		<!-- {{heading}} -->
+		{% endif %}
+		{% block question_content %}
+
+
+
+		{% endblock %}
+	</div>
+	<!-- <div id="rightbar"></div> -->
+
+
+</div>
+
+<script>
+document.getElementById('content_content').innerHTML = return_html;
+</script>
+{% endblock %}

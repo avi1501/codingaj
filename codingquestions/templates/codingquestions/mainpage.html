@@ -1,10 +1,45 @@
 {% extends 'codingquestions/base.html' %}
+{% load static %}
+
+	
+
+
 {% block content %}
+<div id="home__body">
+	
+	<div class="container-fluid p-0 m-0 
+	align-items-center 
+	justify-content-center d-flex"
+	style="min-height: 80vh; 
+	background-color: #d8e6d3;">
+
+		<!-- Row for the card-->
+		<div class="row w-100 p-0 w-0">
+
+			{% for datatype in dataTypes %}
+				<!-- Column for card-->
+				<div class="col-lg-4 mb-2">
+					<div class="card mx-auto" style="width:18rem;">
+						<img class="card-img-top" src=
+							"https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg"
+							alt="Card image cap">
+
+						<div class="card-body">
+							<h5 class="card-title">{{datatype.heading}}</h5>
+							<p class="card-text">
+								{{datatype.description}}
+							</p>
 
 
-    <h4>Launchpad set</h4> 
-    <br>
-    <h1>Content Coming soon!</h1>
+							<a href="{{datatype.id}}" class="btn btn-success">Go to Problems</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 
-
-{% endblock %}
+  </div>
+  {% endblock %}
