@@ -1,0 +1,31 @@
+{% extends "codingquestions/base.html" %}
+
+{% block content %}
+
+<div id="contact">
+    <div id="contact__us">
+        {% if post%}
+        <div id="contact__top">
+            <p><h1>Contact Us</h1></p>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div id="contact__body">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="container">
+                    {{form.as_p}}
+                <input type="Submit" value="submit">
+                </div>
+            </form>
+    
+        </div>
+        {%else%}
+        <div>
+            <p>Thanks for contacting us.</p> 
+            <p>We will reach you out soon.</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

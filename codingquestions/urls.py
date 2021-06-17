@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -10,5 +10,8 @@ urlpatterns = [
     path("questions", views.all_questions.as_view(), name="all_questions"),
     path("questions/<slug:slug>", views.tagQuestionView.as_view(), name="tagView"),
     path("blog/<slug:slug>", views.blogView.as_view(), name="blogView"),
+    
+
+    
 
 ]

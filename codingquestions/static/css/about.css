@@ -1,0 +1,95 @@
+
+#about__me{
+    height:87%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background:#120423;
+    
+}
+
+#aboutme{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    margin-top: 2%;
+    padding-top:60px;
+    height: 68%;
+    width: 50%;
+    /* background: #97ac74; */
+    background-image: linear-gradient(rgb(188, 332, 247),rgb(1, 11, 241),rgb(20,3,3));
+    color-interpolation: linearRGB;
+}
+
+#circle{
+    position:relative;
+    top:0%;
+    left:15%;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    background-image:linear-gradient(rgb(228, 22, 247),rgb(61, 11, 241));
+}
+
+
+
+#inside{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:92px;
+    width:92px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+#inside img {
+    height: 95px;
+    width: 101px;
+    border-radius: 78%;
+}
+
+
+#aboutme__{
+    height: 26%;
+    width: 24%;
+    align-items: center;
+    margin: 6px 39%;
+    /* background-color: red; */
+}
+
+#aboutme__mid{
+    height: 75%;
+    width: 100%;
+    /* background-color: blue; */
+    color: white;
+    /* padding-top: 34px; */
+    text-align: center;
+}
+#aboutme__mid img{
+    height:21px;
+    width:15px;
+}
+
+#aboutme__logos{
+    height: 56px;
+    width: unset;
+    display: flex;
+ 
+    justify-content: space-evenly;
+    padding: 20px 173px;
+}
+
+#aboutme__logo{
+    height: 10px;
+    width: 10px;
+    margin: 20px;
+    border-radius: 50%;
+    
+}
+#aboutme__logos img{
+    height:35px;
+    width:35px;
+    border-radius: 25%;
+}

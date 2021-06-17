@@ -1,6 +1,6 @@
 from django.db import models
 from taggit.managers import TaggableManager
-
+from tinymce.widgets import TinyMCE
 
 # Create your models here.
 
