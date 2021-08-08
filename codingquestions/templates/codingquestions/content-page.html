@@ -1,7 +1,30 @@
 {% extends 'codingquestions/base.html' %}
 {% load static %}
+{% block css %}
+.content__body{
+	height: 86%;
+    width: 100%;
+    padding: 15px;
+    overflow: auto;
+    
+}
+#side_content{
+   
+	height: 521px;
+    width: 100%;
+    overflow: auto;
+  
+    
+}
+.questions{
+    height:100%;
+    width:95%;
+    padding:0 35px;
+    
+}
+{% endblock %}
 {% block content %}
-<div class="page">
+<div class="page" style="height:92%">
 
 	<div id="sidebar">
 		
@@ -14,8 +37,39 @@
 						{% for question in questions %}
 						<div class="question"><a href="{% url 'question' question.slug  %}">{{question}}</a></div>
 						{% endfor %}
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>asldfh</p>
 
-						
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>asldfh</p>
+
+
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>aklsdfjgh</p>
+						<p>asldfh</p>
+						<p>asldfh</p>
+
+
 					</div>
 				</div>
 

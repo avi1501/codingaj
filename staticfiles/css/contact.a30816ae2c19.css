@@ -1,0 +1,28 @@
+#contact{
+    height: 87%;
+    max-height: auto;
+    width:100%;
+    
+
+}
+
+#contact__us{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+
+}
+
+#contact__top{
+    height: 22%;
+    width: 100%;
+    background-color: #d8e6d3;
+    text-align: center;
+    /* padding-top: 11px; */
+}
+
+#contact__body{
+    height: 80%;
+    width: 100%;
+    
+}

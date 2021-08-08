@@ -97,6 +97,11 @@ class questionView(View):
         return render(request, "codingquestions/blogView.html", context)
 
 
+def test(request):
+    return render(request, "codingquestions/test.html")
+
+
+
 
 
 

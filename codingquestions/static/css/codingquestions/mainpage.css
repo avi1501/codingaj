@@ -7,7 +7,7 @@
 }
 
 .page{
-    height:93%;
+    height:92%;
     width: 100%;
     
 }
@@ -48,18 +48,8 @@
     align-content: center;
 }
 
-#side_content{
-    /* background-color:#D9CFC1; */
-    height:100%;
-    width:100%;
-    
-}
-.questions{
-    height:100%;
-    width:95%;
-    padding:0 35px;
-    
-}
+
+
 .question {
     height: auto;
     width: 100%;
@@ -110,11 +100,7 @@ table a{
     margin-top: 0px;
 }
 
-.content__body{
-    height:81%;
-    width:100%;
-    
-}
+
 
 #rightbar{
     background-color: #d8e6d3;
